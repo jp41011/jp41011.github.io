@@ -1,0 +1,65 @@
+/* this is a comment in css */
+body {background-color:#C0C0C0; /* this color is silver */}
+
+ul.navbar
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+li.navbar
+{
+	float:left;
+}
+a:link.navbar,a:visited.navbar
+{
+	display:block;
+	width:120px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#000080;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transformation:uppercase;
+}
+a:hover.navbar,a:active.navbar
+{
+	background-color:#4682B4;
+}
+
+a:link
+{
+	color:#0000FF;
+	text-decoration:none;
+}
+a:visited
+{
+	color:#4682B4;
+	text-decoration:none;
+}
+a:hover
+{
+	color:#008000;
+	text-decoration:underline;
+}
+a:active
+{
+	color:#FFFF00;
+	text-decoration:underline;
+}
+
+img
+{
+	opacity:0.9;
+	filter:aplha(opacity=90); /* for IE8 and earlier */
+}
+img:hover
+{
+	border: 1px solid;
+	opacity:1.0;
+	filter:aplha(opacity=100); /* for IE8 and earlier */
+}
+
+
