@@ -43,11 +43,18 @@
 	<!-- end of side bar -->
 	<div class="mainBody" id="userBase">
 		<p>Number base converter</p>
-		<input type="text" name="userNumber">
-		<select>
-			<option value="decimal">Decimal</option>
-			<option value="binary">Binary</option>
-			<option value="hex">Hexidecimal</option>
-		</select>
+		<table>
+			<tr><td>
+				<select>
+					<option value="decimal">Decimal</option>
+					<option value="binary">Binary</option>
+					<option value="hex">Hexidecimal</option>
+				</select>
+			</td>
+			<td><input type="text" name="userNumber"/></td></tr>
+			<tr><td>Decimal:</td><td><input type="text" name="fieldDec"/></td></tr>
+			<tr><td>Binary:</td><td><input type="text" name="fieldBin"/></td></tr>
+			<tr><td>Hexidecimal:</td><td><input type="text" name="fieldHex"/></td></tr>
+		</table>
 	</div>
 </body>
