@@ -1,6 +1,6 @@
 /* this is a comment in css */
 body {background-color:#C0C0C0; /* this color is silver */}
-
+/* navbar start */
 ul.navbar
 {
 	list-style-type:none;
@@ -28,7 +28,17 @@ a:hover.navbar,a:active.navbar
 {
 	background-color:#4682B4;
 }
-
+/* navbar end */
+/* sidebar start */
+.sidebar{
+	width: 45px;
+	height: 90px;
+	position: fixed;
+	left: 0px;
+	top: 300px;
+	border: 1px solid black;
+}
+/* sidebar end */
 a:link
 {
 	color:#0000FF;
@@ -61,5 +71,3 @@ img:hover
 	opacity:1.0;
 	filter:aplha(opacity=100); /* for IE8 and earlier */
 }
-
-

@@ -1,36 +1,36 @@
 // this is a comment in javascript /* for multi-line comments */
 
 /* var x = 0; // var initializes local variable
- with out the var it would make a global variable
- */
+with out the var it would make a global variable
+*/
  
- /*
- This function will make alert box, pop-up
- */
- function alertFunc()
- {
+/*
+This function will make alert box, pop-up
+*/
+function alertFunc()
+{
     alert("Hello, This is my first alert box!");
 }
 
- /*
- Produce confirm box
- to verify or accept something
- confirm box returns:
- true if user clicks 'Ok'
- false if user clicks 'Cancel'
- */
- function confirmFunc()
- {
+/*
+Produce confirm box
+to verify or accept something
+confirm box returns:
+true if user clicks 'Ok'
+false if user clicks 'Cancel'
+*/
+function confirmFunc()
+{
    var pressed_ok = confirm("I will tell you what you clicked, :O");
    if (pressed_ok)
-   {
-    text = "You pressed OK! :)";
-}
-else
-{
-    text = "You pressed Cancel :(";
-}
-document.getElementById("confirm_result").innerHTML=text;
+    {
+        text = "You pressed OK! :)";
+    }
+    else
+    {
+        text = "You pressed Cancel :(";
+    }
+    document.getElementById("confirm_result").innerHTML=text;
 }
 
 function promptFunc()
