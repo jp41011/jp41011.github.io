@@ -6,7 +6,7 @@
 	<title>Juan's HTML</title>
 	
 	<!-- base tag specifies a default address or target for links on page -->
-	<base target = "_blank"/> <! open in a new tab>
+	<base target = "_self"/> <! open in a new tab>
 
 	<!-- use external css style sheet -->
 	<link rel="stylesheet" type="text/css" href="myStyleSheet.css"/>
@@ -15,7 +15,7 @@
 	<script type="text/javascript" src="myJavascript.js"></script>
 	
 	<!-- website tab icon. Not working correctly -->
-	<link rel="Shortcut Icon" href="./favicon.ico">
+	<link rel="Shortcut Icon" href="./favicon.ico"/>
 
 	<!--meta element describes page-->
 	<meta name="This is Juan's html page, keywords" content="I don't know what this will be about yet"/>
@@ -25,15 +25,22 @@
 <body>
 
 	<!-- start navigation bar -->
-	<ul class="navbar"> <!-- unordered list-->
-		<li class="navbar"><a class="navbar" href="#home">Home</a></li>
-		<li class="navbar"><a class="navbar" href="#news">News</a></li>
-		<li class="navbar"><a class="navbar" href="#contact">Contact</a></li>
-		<li class="navbar"><a class="navbar" href="#about">About</a></li>
-	</ul>
+	<div class='navbar'>
+		<ul class="navbar"> <!-- unordered list-->
+			<li class="navbar"><a class="navbar" href="#index">Home</a></li>
+			<li class="navbar"><a class="navbar" href="#news">News</a></li>
+			<li class="navbar"><a class="navbar" href="#contact">Contact</a></li>
+			<li class="navbar"><a class="navbar" href="#about">About</a></li>
+		</ul>
+	</div>
 	<!-- end of nav bar -->
-	<!-- start side bar -->
-	<div class = "sidebar">I'm a sidebar </div>
+	<!-- start side bar 
+	<div class = "sidebar">I'm a sidebar
+		<ul>
+			<li><a class="navbar" href="#Home">Home</a></li>
+			<li><a class='navbar' href='#News'>News</a></li>
+		</ul>
+	</div>
 	<!-- end of side bar -->
 
 	<p>Hello World!</p>
@@ -49,7 +56,7 @@
 	<strike>strike</strike><br>
 	horizontal line
 	<hr/>
-	<div style="width:410px; height:120px; margin:30px 50px; background-color:#ffffff;border:1px solid black; opacity:0.7; filter:alpha(opacity=60);">
+	<div style="width:410px; height:120px; margin:50px 80px; background-color:#ffffff;border:1px solid black; opacity:0.7; filter:alpha(opacity=60);">
 		<p>This is some text to see how it will appear. Pressed Enter after this period.
 			Testing, white background with opacity = 0.7
 		</p>
@@ -68,7 +75,7 @@
 	E-mail Validation
 	<br/><br/>
 	<!-- need to change what action points to -->
-	<form name="emailForm" action="demo_form.asp" onsubmit="return validateEmail();" method="post">
+	<form name="emailForm" action="" onsubmit="return validateEmail();" method="post">
 		E-mail: <input type="text" name="email">
 		<input type="submit" value="Submit">
 	</form>
