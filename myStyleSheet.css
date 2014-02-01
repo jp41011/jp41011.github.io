@@ -34,8 +34,8 @@ a:hover.navbar,a:active.navbar
 /* navbar end */
 /* sidebar start */
 .sidebar{
-	width: 100px;
-	height: 300px;
+	width: 200px;
+	height: 400px;
 	position: fixed;
 	left: 0px;
 	top: 200px;
@@ -71,4 +71,8 @@ img:hover
 	border: 1px solid;
 	opacity:1.0;
 	filter:aplha(opacity=100); /* for IE8 and earlier */
+}
+
+div.mainBody{
+	margin-left: 300px;
 }
