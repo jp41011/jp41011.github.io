@@ -33,7 +33,7 @@ a:hover.navbar,a:active.navbar
 }
 /* navbar end */
 /* sidebar start */
-.sidebar{
+div.sidebar{
 	width: 200px;
 	height: 400px;
 	position: fixed;
@@ -60,7 +60,7 @@ a:active
 {
 	text-decoration:underline;
 }
-
+/* */
 img
 {
 	opacity:0.9;
@@ -72,7 +72,13 @@ img:hover
 	opacity:1.0;
 	filter:aplha(opacity=100); /* for IE8 and earlier */
 }
-
+/* */
 div.mainBody{
 	margin-left: 300px;
+}
+div.pic{
+	border-radius: 50x;
+	border: 2px solid;
+	height: 50px;
+	width: 30px;
 }
